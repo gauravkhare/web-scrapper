@@ -2,9 +2,6 @@ package com.gkeq.webscrap.conf
 
 import com.typesafe.config.Config
 
-/**
-  * Created by timmy on 22/08/18.
-  */
 case class Urls(etUrl: String)
 case class Files(etFile: String)
 class Settings(val conf: Config) {

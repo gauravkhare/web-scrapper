@@ -7,9 +7,6 @@ import com.gkeq.webscrap.model.Recom
 import org.slf4j.LoggerFactory
 
 
-/**
-  * Created by timmy on 22/08/18.
-  */
 class FileSink(settings: Settings) {
 
   private lazy val logger = LoggerFactory.getLogger(getClass)
