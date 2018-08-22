@@ -1,0 +1,7 @@
+# Created by .ignore support plugin (hsz.mobi)
+.idea
+log
+target
+project/project/
+/src/main/scala/App.scala
+/et_recommendations.csv
