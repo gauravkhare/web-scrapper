@@ -16,6 +16,7 @@ class EtRecomScraper {
 
     // TODO use NLP to extract information
     // TODO include header if file does not exist
+    // TODO fix bug
     val res = for (ele <- it if ele.select("time").text()!="")
       yield
         Recom(ele.select("time").text().replace(",",""),
