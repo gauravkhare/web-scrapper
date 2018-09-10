@@ -6,8 +6,14 @@ import org.jsoup.nodes.Document
 
 class WebSource {
 
-  def getDocument(settings: Settings): Document = {
+  def getRecomDocument(settings: Settings): Document = {
     Jsoup.connect(settings.urls.etUrl)
+      .timeout(settings.timeout.toInt)
+      .get()
+  }
+
+  def getNewsDocument(settings: Settings): Document = {
+    Jsoup.connect(settings.urls.etNewsUrl)
       .timeout(settings.timeout.toInt)
       .get()
   }

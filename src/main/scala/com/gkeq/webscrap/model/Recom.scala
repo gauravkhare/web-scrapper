@@ -10,12 +10,12 @@ case class Recom(datetime: String,
                  recom: String) {
 
   override def toString: String =
-    datetime + "," +
+    datetime + "~" +
       recom +
-      stock.getOrElse("") + "," +
-      view.getOrElse("") + "," +
-      entry.getOrElse(-1) + "," +
-      target.getOrElse(-1) + "," +
+      stock.getOrElse("") + "~" +
+      view.getOrElse("") + "~" +
+      entry.getOrElse(-1) + "~" +
+      target.getOrElse(-1) + "~" +
       stoploss.getOrElse(-1)
 
 }
